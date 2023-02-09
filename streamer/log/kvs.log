@@ -1,0 +1,505 @@
+[INFO ] [02-08-2022 01:55:10:895.880 UTC] createKinesisVideoClient(): Creating Kinesis Video Client
+[INFO ] [02-08-2022 01:55:10:896.299 UTC] heapInitialize(): Initializing native heap with limit size 134217728, spill ratio 0% and flags 0x00000001
+[INFO ] [02-08-2022 01:55:10:896.315 UTC] heapInitialize(): Creating AIV heap.
+[INFO ] [02-08-2022 01:55:10:896.372 UTC] heapInitialize(): Heap is initialized OK
+[DEBUG] [02-08-2022 01:55:10:896.418 UTC] getSecurityTokenHandler invoked
+[DEBUG] [02-08-2022 01:55:10:896.433 UTC] Refreshing credentials. Force refreshing: 0 Now time is: 1659405310896429 Expiration: 0
+[INFO ] [02-08-2022 01:55:10:896.621 UTC] createDeviceResultEvent(): Create device result event.
+[DEBUG] [02-08-2022 01:55:10:896.648 UTC] clientReadyHandler invoked
+[INFO ] [02-08-2022 01:55:10:896.685 UTC] try creating stream
+[INFO ] [02-08-2022 01:55:10:896.916 UTC] Creating Kinesis Video Stream test
+[INFO ] [02-08-2022 01:55:10:896.931 UTC] createKinesisVideoStream(): Creating Kinesis Video Stream.
+[INFO ] [02-08-2022 01:55:10:896.939 UTC] logStreamInfo(): SDK version: 70f74f14cf27b09f71dc1889f36eb6e04cdd90a8
+[DEBUG] [02-08-2022 01:55:10:896.947 UTC] logStreamInfo(): Kinesis Video Stream Info
+[DEBUG] [02-08-2022 01:55:10:896.955 UTC] logStreamInfo(): 	Stream name: test 
+[DEBUG] [02-08-2022 01:55:10:896.963 UTC] logStreamInfo(): 	Streaming type: STREAMING_TYPE_REALTIME 
+[DEBUG] [02-08-2022 01:55:10:896.971 UTC] logStreamInfo(): 	Content type: video/h264 
+[DEBUG] [02-08-2022 01:55:10:896.979 UTC] logStreamInfo(): 	Max latency (100ns): 600000000
+[DEBUG] [02-08-2022 01:55:10:896.987 UTC] logStreamInfo(): 	Fragment duration (100ns): 20000000
+[DEBUG] [02-08-2022 01:55:10:896.994 UTC] logStreamInfo(): 	Key frame fragmentation: Yes
+[DEBUG] [02-08-2022 01:55:10:897.001 UTC] logStreamInfo(): 	Use frame timecode: Yes
+[DEBUG] [02-08-2022 01:55:10:897.009 UTC] logStreamInfo(): 	Absolute frame timecode: Yes
+[DEBUG] [02-08-2022 01:55:10:897.016 UTC] logStreamInfo(): 	Nal adaptation flags: 0
+[DEBUG] [02-08-2022 01:55:10:897.023 UTC] logStreamInfo(): 	Average bandwith (bps): 4194304
+[DEBUG] [02-08-2022 01:55:10:897.031 UTC] logStreamInfo(): 	Framerate: 25
+[DEBUG] [02-08-2022 01:55:10:897.038 UTC] logStreamInfo(): 	Buffer duration (100ns): 1200000000
+[DEBUG] [02-08-2022 01:55:10:897.046 UTC] logStreamInfo(): 	Replay duration (100ns): 400000000
+[DEBUG] [02-08-2022 01:55:10:897.053 UTC] logStreamInfo(): 	Connection Staleness duration (100ns): 600000000
+[DEBUG] [02-08-2022 01:55:10:897.060 UTC] logStreamInfo(): 	Store Pressure Policy: 1
+[DEBUG] [02-08-2022 01:55:10:897.068 UTC] logStreamInfo(): 	View Overflow Policy: 1
+[DEBUG] [02-08-2022 01:55:10:897.075 UTC] logStreamInfo(): 	Segment UUID: NULL
+[DEBUG] [02-08-2022 01:55:10:897.082 UTC] logStreamInfo(): 	Frame ordering mode: 0
+[DEBUG] [02-08-2022 01:55:10:897.089 UTC] logStreamInfo(): Track list
+[DEBUG] [02-08-2022 01:55:10:897.096 UTC] logStreamInfo(): 	Track id: 1
+[DEBUG] [02-08-2022 01:55:10:897.104 UTC] logStreamInfo(): 	Track name: kinesis_video
+[DEBUG] [02-08-2022 01:55:10:897.111 UTC] logStreamInfo(): 	Codec id: V_MPEG4/ISO/AVC
+[DEBUG] [02-08-2022 01:55:10:897.118 UTC] logStreamInfo(): 	Track type: TRACK_INFO_TYPE_VIDEO
+[DEBUG] [02-08-2022 01:55:10:897.126 UTC] logStreamInfo(): 	Track cpd: NULL
+[INFO ] [02-08-2022 01:55:11:072.385 UTC] writeHeaderCallback(): RequestId: 3fb418f3-d582-4193-9484-ba3be48c2ab5
+[WARN ] [02-08-2022 01:55:11:072.518 UTC] curlCompleteSync(): HTTP Error 404 : Response: {"Message":"The requested stream is not found or not active."}
+Request URL: https://kinesisvideo.us-east-1.amazonaws.com/describeStream
+Request Headers:
+    Authorization: AWS4-HMAC-SHA256 Credential=AKIARB5W3UQBYUYTHIG2/20220802/us-east-1/kinesisvideo/aws4_request, SignedHeaders=host;user-agent;x-amz-date, Signature=b3534f01913e908fe7df6aec479c656b8e6abcfe25217197fc31ea957cadd06d
+    content-length: 25
+    content-type: application/json
+    host: kinesisvide
+[DEBUG] [02-08-2022 01:55:11:072.551 UTC] describeStreamCurlHandler(): DescribeStream API response: {"Message":"The requested stream is not found or not active."}
+[INFO ] [02-08-2022 01:55:11:073.475 UTC] describeStreamResultEvent(): Describe stream result event.
+[DEBUG] [02-08-2022 01:55:11:073.506 UTC] defaultStreamStateTransitionHook(): Stream state machine retry count: 0
+[DEBUG] [02-08-2022 01:55:11:073.520 UTC] defaultStreamStateTransitionHook(): 
+ KinesisVideoStream base result is [404]. Executing KVS retry handler of retry strategy type [1]
+[DEBUG] [02-08-2022 01:55:11:073.611 UTC] createStreamCurlHandler(): createStreamCurlHandler response 0x15c95e000
+[INFO ] [02-08-2022 01:55:11:450.196 UTC] writeHeaderCallback(): RequestId: c198699d-bf3b-4149-948e-8aecc1bf0ce6
+[DEBUG] [02-08-2022 01:55:11:450.560 UTC] createStreamCurlHandler(): CreateStream API response: {"StreamARN":"arn:aws:kinesisvideo:us-east-1:072861066243:stream/test/1659405311438"}
+[INFO ] [02-08-2022 01:55:11:453.430 UTC] createStreamResultEvent(): Create stream result event.
+[INFO ] [02-08-2022 01:55:11:576.007 UTC] writeHeaderCallback(): RequestId: 0cf442e5-937b-4259-a8b0-642a767d52e5
+[DEBUG] [02-08-2022 01:55:11:576.182 UTC] getStreamingEndpointCurlHandler(): GetStreamingEndpoint API response: {"DataEndpoint":"https://s-1e415f8b.kinesisvideo.us-east-1.amazonaws.com"}
+[INFO ] [02-08-2022 01:55:11:577.654 UTC] getStreamingEndpointResultEvent(): Get streaming endpoint result event.
+[DEBUG] [02-08-2022 01:55:11:577.704 UTC] getStreamingTokenHandler invoked
+[DEBUG] [02-08-2022 01:55:11:577.733 UTC] Refreshing credentials. Force refreshing: 1 Now time is: 1659405311577724 Expiration: 18446744073709551615
+[INFO ] [02-08-2022 01:55:11:577.759 UTC] getStreamingTokenResultEvent(): Get streaming token result event.
+[DEBUG] [02-08-2022 01:55:11:577.787 UTC] streamReadyHandler invoked
+[INFO ] [02-08-2022 01:55:13:299.805 UTC] kinesisVideoStreamFormatChanged(): Stream format changed.
+[INFO ] [02-08-2022 01:55:13:300.003 UTC] putStreamResultEvent(): Put stream result event. New upload handle 0
+[WARN ] [02-08-2022 01:55:13:310.759 UTC] notifyDataAvailable(): Failed to un-pause curl with error: 43. Curl object 0x15c1f6e00
+[DEBUG] [02-08-2022 01:55:13:310.820 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 134216932
+	>> Allocated storage byte size: 796
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 25
+	>> Total streams transfer rate (bps): 33554432 (32768 Kbps)
+	>> Current view duration (ms): 0
+	>> Overall view duration (ms): 0
+	>> Current view byte size: 748
+	>> Overall view byte size: 748
+	>> Current elementary frame rate (fps): 25
+	>> Current transfer rate (bps): 33554432 (32768 Kbps)
+[INFO ] [02-08-2022 01:55:13:514.792 UTC] writeHeaderCallback(): RequestId: c000af84-38a5-ad80-9b62-29c57e03fcfa
+[DEBUG] [02-08-2022 01:55:13:514.890 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:516.061 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:534.949 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:562.751 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405313299,"FragmentNumber":"91343852333181432392682062647352431867016864529"}
+
+[DEBUG] [02-08-2022 01:55:13:562.836 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:13:578.316 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:586.842 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:595.042 UTC] postReadCallback(): Wrote 44507 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:620.793 UTC] postReadCallback(): Wrote 41465 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:642.615 UTC] postReadCallback(): Wrote 39668 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:710.162 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:711.735 UTC] postReadCallback(): Wrote 15525 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:737.085 UTC] postReadCallback(): Wrote 41215 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:760.184 UTC] postReadCallback(): Wrote 43120 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:827.770 UTC] postReadCallback(): Wrote 42573 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:828.997 UTC] postReadCallback(): Wrote 41798 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:895.928 UTC] postReadCallback(): Wrote 45747 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:896.958 UTC] postReadCallback(): Wrote 44770 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:965.082 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:13:966.410 UTC] postReadCallback(): Wrote 24673 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:036.904 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:038.506 UTC] postReadCallback(): Wrote 27554 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:105.723 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:107.591 UTC] postReadCallback(): Wrote 25078 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:176.555 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:178.096 UTC] postReadCallback(): Wrote 27337 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:201.782 UTC] postReadCallback(): Wrote 47669 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:267.246 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:269.271 UTC] postReadCallback(): Wrote 26597 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:339.071 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:340.934 UTC] postReadCallback(): Wrote 26459 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:366.532 UTC] postReadCallback(): Wrote 46667 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:431.570 UTC] postReadCallback(): Wrote 47962 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:433.385 UTC] postReadCallback(): Wrote 49597 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:508.521 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:510.214 UTC] postReadCallback(): Wrote 31169 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:575.065 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:577.068 UTC] postReadCallback(): Wrote 33515 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:640.277 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:641.870 UTC] postReadCallback(): Wrote 32915 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:701.585 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 132257307
+	>> Allocated storage byte size: 1960421
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 30
+	>> Total streams transfer rate (bps): 27430288 (26787 Kbps)
+	>> Current view duration (ms): 34
+	>> Overall view duration (ms): 1535
+	>> Current view byte size: 127773
+	>> Overall view byte size: 1957949
+	>> Current elementary frame rate (fps): 30.0042
+	>> Current transfer rate (bps): 27430288 (26787 Kbps)
+[DEBUG] [02-08-2022 01:55:14:702.907 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:704.227 UTC] postReadCallback(): Wrote 62249 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:768.224 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:769.733 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1659405313299,"FragmentNumber":"91343852333181432392682062647352431867016864529"}
+
+[DEBUG] [02-08-2022 01:55:14:769.771 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:14:769.793 UTC] postReadCallback(): Wrote 27947 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:770.266 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405314834,"FragmentNumber":"91343852333181432397633822804493953284490715979"}
+
+[DEBUG] [02-08-2022 01:55:14:770.286 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:14:835.335 UTC] postReadCallback(): Wrote 46350 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:836.691 UTC] postReadCallback(): Wrote 45156 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:905.913 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:907.405 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1659405313299,"FragmentNumber":"91343852333181432392682062647352431867016864529"}
+
+[DEBUG] [02-08-2022 01:55:14:907.494 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:14:907.518 UTC] postReadCallback(): Wrote 29059 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:976.984 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:14:978.346 UTC] postReadCallback(): Wrote 28454 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:045.053 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:045.900 UTC] postReadCallback(): Wrote 26739 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:066.728 UTC] postReadCallback(): Wrote 45402 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:137.489 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:139.044 UTC] postReadCallback(): Wrote 27419 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:204.189 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:205.936 UTC] postReadCallback(): Wrote 27991 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:226.735 UTC] postReadCallback(): Wrote 46328 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:297.856 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:299.918 UTC] postReadCallback(): Wrote 25871 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:366.010 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:367.729 UTC] postReadCallback(): Wrote 31507 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:393.398 UTC] postReadCallback(): Wrote 47447 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:460.016 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:461.834 UTC] postReadCallback(): Wrote 25658 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:530.424 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:531.854 UTC] postReadCallback(): Wrote 28938 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:594.486 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:595.419 UTC] postReadCallback(): Wrote 28255 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:658.883 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:660.465 UTC] postReadCallback(): Wrote 30141 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:726.366 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:727.635 UTC] postReadCallback(): Wrote 58033 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:752.615 UTC] postReadCallback(): Wrote 64733 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:821.665 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:823.452 UTC] postReadCallback(): Wrote 50089 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:886.315 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:887.693 UTC] postReadCallback(): Wrote 56209 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:957.257 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:958.822 UTC] postReadCallback(): Wrote 63236 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:15:982.232 UTC] postReadCallback(): Wrote 65105 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:049.802 UTC] postReadCallback(): Wrote 62656 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:051.443 UTC] postReadCallback(): Wrote 64179 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:118.595 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:120.183 UTC] postReadCallback(): Wrote 58394 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:178.642 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 131746728
+	>> Allocated storage byte size: 2471000
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 30
+	>> Total streams transfer rate (bps): 23492808 (22942 Kbps)
+	>> Current view duration (ms): 33
+	>> Overall view duration (ms): 1500
+	>> Current view byte size: 162314
+	>> Overall view byte size: 2468792
+	>> Current elementary frame rate (fps): 30.0009
+	>> Current transfer rate (bps): 23492808 (22942 Kbps)
+[DEBUG] [02-08-2022 01:55:16:190.416 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:191.863 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:193.234 UTC] postReadCallback(): Wrote 31266 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:218.441 UTC] postReadCallback(): Wrote 64963 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:288.736 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:289.945 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1659405314834,"FragmentNumber":"91343852333181432397633822804493953284490715979"}
+
+[DEBUG] [02-08-2022 01:55:16:290.004 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:16:290.030 UTC] postReadCallback(): Wrote 60274 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:290.976 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405316334,"FragmentNumber":"91343852333181432402585582961635474784630821065"}
+
+[DEBUG] [02-08-2022 01:55:16:291.010 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:16:311.068 UTC] postReadCallback(): Wrote 61937 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:375.921 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:377.432 UTC] postReadCallback(): Wrote 57894 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:445.475 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:447.068 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1659405314834,"FragmentNumber":"91343852333181432397633822804493953284490715979"}
+
+[DEBUG] [02-08-2022 01:55:16:447.151 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:16:447.182 UTC] postReadCallback(): Wrote 58066 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:468.664 UTC] postReadCallback(): Wrote 60154 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:534.857 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:536.577 UTC] postReadCallback(): Wrote 52757 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:607.260 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:608.675 UTC] postReadCallback(): Wrote 49843 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:634.722 UTC] postReadCallback(): Wrote 58814 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:699.393 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:701.438 UTC] postReadCallback(): Wrote 48038 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:769.338 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:771.169 UTC] postReadCallback(): Wrote 49037 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:797.211 UTC] postReadCallback(): Wrote 58949 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:864.934 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:866.648 UTC] postReadCallback(): Wrote 48460 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:933.643 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:934.874 UTC] postReadCallback(): Wrote 44622 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:16:999.664 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:001.205 UTC] postReadCallback(): Wrote 49793 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:023.010 UTC] postReadCallback(): Wrote 59761 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:089.834 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:090.923 UTC] postReadCallback(): Wrote 48703 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:161.704 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:163.328 UTC] postReadCallback(): Wrote 46066 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:228.274 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:229.563 UTC] postReadCallback(): Wrote 53109 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:255.379 UTC] postReadCallback(): Wrote 58702 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:326.816 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:328.880 UTC] postReadCallback(): Wrote 46884 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:354.514 UTC] postReadCallback(): Wrote 55286 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:423.200 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:424.583 UTC] postReadCallback(): Wrote 49907 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:450.577 UTC] postReadCallback(): Wrote 55128 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:476.549 UTC] postReadCallback(): Wrote 53439 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:543.188 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:544.439 UTC] postReadCallback(): Wrote 41056 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:611.144 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:612.436 UTC] postReadCallback(): Wrote 46661 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:643.373 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 131458196
+	>> Allocated storage byte size: 2759532
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 30
+	>> Total streams transfer rate (bps): 21240672 (20742 Kbps)
+	>> Current view duration (ms): 0
+	>> Overall view duration (ms): 1501
+	>> Current view byte size: 102799
+	>> Overall view byte size: 2757324
+	>> Current elementary frame rate (fps): 30.0012
+	>> Current transfer rate (bps): 21240672 (20742 Kbps)
+[DEBUG] [02-08-2022 01:55:17:677.816 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:678.773 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:679.458 UTC] postReadCallback(): Wrote 30339 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:746.654 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:747.531 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1659405316334,"FragmentNumber":"91343852333181432402585582961635474784630821065"}
+
+[DEBUG] [02-08-2022 01:55:17:747.562 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:17:747.578 UTC] postReadCallback(): Wrote 46931 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:748.127 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405317835,"FragmentNumber":"91343852333181432407537343118776996279610383233"}
+
+[DEBUG] [02-08-2022 01:55:17:748.141 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:17:815.829 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:816.955 UTC] postReadCallback(): Wrote 44538 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:884.058 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:885.476 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1659405316334,"FragmentNumber":"91343852333181432402585582961635474784630821065"}
+
+[DEBUG] [02-08-2022 01:55:17:885.540 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:17:885.570 UTC] postReadCallback(): Wrote 44878 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:949.990 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:951.832 UTC] postReadCallback(): Wrote 44609 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:17:975.845 UTC] postReadCallback(): Wrote 53812 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:042.304 UTC] postReadCallback(): Wrote 56221 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:065.792 UTC] postReadCallback(): Wrote 54674 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:092.101 UTC] postReadCallback(): Wrote 53460 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:113.213 UTC] postReadCallback(): Wrote 54277 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:180.026 UTC] postReadCallback(): Wrote 52648 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:201.745 UTC] postReadCallback(): Wrote 53964 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:223.476 UTC] postReadCallback(): Wrote 52844 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:293.627 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:294.822 UTC] postReadCallback(): Wrote 38280 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:320.277 UTC] postReadCallback(): Wrote 52165 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:383.571 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:384.820 UTC] postReadCallback(): Wrote 36914 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:450.203 UTC] postReadCallback(): Wrote 51196 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:471.453 UTC] postReadCallback(): Wrote 50592 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:497.312 UTC] postReadCallback(): Wrote 50824 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:523.511 UTC] postReadCallback(): Wrote 50898 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:590.285 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:591.751 UTC] postReadCallback(): Wrote 38418 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:662.927 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:664.645 UTC] postReadCallback(): Wrote 43515 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:728.428 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:729.832 UTC] postReadCallback(): Wrote 39943 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:751.981 UTC] postReadCallback(): Wrote 51629 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:819.145 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:820.732 UTC] postReadCallback(): Wrote 40934 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:886.264 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:887.694 UTC] postReadCallback(): Wrote 42976 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:955.210 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:956.743 UTC] postReadCallback(): Wrote 46279 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:18:982.573 UTC] postReadCallback(): Wrote 56588 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:046.157 UTC] postReadCallback(): Wrote 56158 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:072.344 UTC] postReadCallback(): Wrote 55134 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:098.923 UTC] postReadCallback(): Wrote 56723 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:122.840 UTC] postReadCallback(): Wrote 58985 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:140.905 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 131635617
+	>> Allocated storage byte size: 2582111
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 29
+	>> Total streams transfer rate (bps): 18716120 (18277 Kbps)
+	>> Current view duration (ms): 0
+	>> Overall view duration (ms): 1501
+	>> Current view byte size: 101221
+	>> Overall view byte size: 2579903
+	>> Current elementary frame rate (fps): 29.999
+	>> Current transfer rate (bps): 18716120 (18277 Kbps)
+[DEBUG] [02-08-2022 01:55:19:148.714 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:149.914 UTC] postReadCallback(): Wrote 35697 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:215.479 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:216.938 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1659405317835,"FragmentNumber":"91343852333181432407537343118776996279610383233"}
+
+[DEBUG] [02-08-2022 01:55:19:216.979 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:19:217.004 UTC] postReadCallback(): Wrote 53000 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:217.942 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405319336,"FragmentNumber":"91343852333181432412489103275918517773083141376"}
+
+[DEBUG] [02-08-2022 01:55:19:217.972 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:19:239.003 UTC] postReadCallback(): Wrote 55966 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:306.409 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:308.015 UTC] postReadCallback(): Wrote 48305 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:376.510 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:377.999 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1659405317835,"FragmentNumber":"91343852333181432407537343118776996279610383233"}
+
+[DEBUG] [02-08-2022 01:55:19:378.081 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:19:378.108 UTC] postReadCallback(): Wrote 56535 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:442.996 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:444.348 UTC] postReadCallback(): Wrote 53077 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:510.123 UTC] postReadCallback(): Wrote 58962 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:511.358 UTC] postReadCallback(): Wrote 60225 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:579.889 UTC] postReadCallback(): Wrote 59522 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:605.897 UTC] postReadCallback(): Wrote 60492 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:632.056 UTC] postReadCallback(): Wrote 59037 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:700.023 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:701.426 UTC] postReadCallback(): Wrote 48551 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:727.291 UTC] postReadCallback(): Wrote 58081 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:753.437 UTC] postReadCallback(): Wrote 57426 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:821.329 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:822.678 UTC] postReadCallback(): Wrote 48567 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:890.019 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:891.566 UTC] postReadCallback(): Wrote 51855 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:960.146 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:19:961.795 UTC] postReadCallback(): Wrote 49898 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:030.415 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:031.663 UTC] postReadCallback(): Wrote 52048 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:054.477 UTC] postReadCallback(): Wrote 59478 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:080.935 UTC] postReadCallback(): Wrote 59875 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:151.491 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:152.805 UTC] postReadCallback(): Wrote 55152 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:218.164 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:219.556 UTC] postReadCallback(): Wrote 52804 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:243.135 UTC] postReadCallback(): Wrote 57506 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:310.811 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:312.146 UTC] postReadCallback(): Wrote 48315 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:382.064 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:383.347 UTC] postReadCallback(): Wrote 47876 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:450.623 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:452.209 UTC] postReadCallback(): Wrote 49590 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:474.306 UTC] postReadCallback(): Wrote 59069 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:541.343 UTC] postReadCallback(): Wrote 61141 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:542.904 UTC] postReadCallback(): Wrote 60334 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:612.170 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:613.537 UTC] postReadCallback(): Wrote 49397 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:646.999 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 131436833
+	>> Allocated storage byte size: 2780895
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 29
+	>> Total streams transfer rate (bps): 17522520 (17111 Kbps)
+	>> Current view duration (ms): 0
+	>> Overall view duration (ms): 1501
+	>> Current view byte size: 102522
+	>> Overall view byte size: 2778687
+	>> Current elementary frame rate (fps): 29.9494
+	>> Current transfer rate (bps): 17522520 (17111 Kbps)
+[DEBUG] [02-08-2022 01:55:20:684.535 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:686.107 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:687.165 UTC] postReadCallback(): Wrote 26749 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:751.532 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:752.672 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1659405319336,"FragmentNumber":"91343852333181432412489103275918517773083141376"}
+
+[DEBUG] [02-08-2022 01:55:20:752.703 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:20:752.724 UTC] postReadCallback(): Wrote 45425 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:753.442 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405320837,"FragmentNumber":"91343852333181432417440863433060039285433022747"}
+
+[DEBUG] [02-08-2022 01:55:20:753.462 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:20:776.722 UTC] postReadCallback(): Wrote 53195 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:844.624 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:845.918 UTC] postReadCallback(): Wrote 44186 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:914.314 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:915.487 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1659405319336,"FragmentNumber":"91343852333181432412489103275918517773083141376"}
+
+[DEBUG] [02-08-2022 01:55:20:915.540 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:20:915.561 UTC] postReadCallback(): Wrote 55078 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:979.789 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:20:980.937 UTC] postReadCallback(): Wrote 54113 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:046.797 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:048.054 UTC] postReadCallback(): Wrote 54367 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:115.558 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:116.751 UTC] postReadCallback(): Wrote 51073 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:185.899 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:187.288 UTC] postReadCallback(): Wrote 47053 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:210.017 UTC] postReadCallback(): Wrote 57647 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:277.628 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:279.310 UTC] postReadCallback(): Wrote 45033 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:348.803 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:350.332 UTC] postReadCallback(): Wrote 48497 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:376.340 UTC] postReadCallback(): Wrote 59877 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:445.818 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:447.804 UTC] postReadCallback(): Wrote 48749 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:514.184 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:515.844 UTC] postReadCallback(): Wrote 46905 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:581.895 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:583.247 UTC] postReadCallback(): Wrote 48518 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:609.108 UTC] postReadCallback(): Wrote 57736 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:680.375 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:682.256 UTC] postReadCallback(): Wrote 57292 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:708.090 UTC] postReadCallback(): Wrote 61547 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:775.573 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:777.608 UTC] postReadCallback(): Wrote 53981 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:849.352 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:850.283 UTC] postReadCallback(): Wrote 53272 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:875.846 UTC] postReadCallback(): Wrote 58784 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:943.050 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:21:943.865 UTC] postReadCallback(): Wrote 51500 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:007.395 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:008.333 UTC] postReadCallback(): Wrote 55386 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:077.380 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:078.394 UTC] postReadCallback(): Wrote 57866 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:136.616 UTC] Kinesis Video client and stream metrics
+	>> Overall storage byte size: 134217728
+	>> Available storage byte size: 131456314
+	>> Allocated storage byte size: 2761414
+	>> Total view allocation byte size: 144080
+	>> Total streams elementary frame rate (fps): 30
+	>> Total streams transfer rate (bps): 16526592 (16139 Kbps)
+	>> Current view duration (ms): 33
+	>> Overall view duration (ms): 1500
+	>> Current view byte size: 154897
+	>> Overall view byte size: 2759206
+	>> Current elementary frame rate (fps): 30.0008
+	>> Current transfer rate (bps): 16526592 (16139 Kbps)
+[DEBUG] [02-08-2022 01:55:22:144.955 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:145.880 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:146.599 UTC] postReadCallback(): Wrote 23849 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:215.294 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:216.717 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"RECEIVED","FragmentTimecode":1659405320837,"FragmentNumber":"91343852333181432417440863433060039285433022747"}
+
+[DEBUG] [02-08-2022 01:55:22:216.753 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:22:216.777 UTC] postReadCallback(): Wrote 51892 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:217.672 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"BUFFERING","FragmentTimecode":1659405322337,"FragmentNumber":"91343852333181432422392623590201560780949952325"}
+
+[DEBUG] [02-08-2022 01:55:22:217.697 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:22:240.510 UTC] postReadCallback(): Wrote 59957 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:303.877 UTC] postReadCallback(): Wrote 54543 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:305.479 UTC] postReadCallback(): Wrote 51486 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:374.516 UTC] postReadCallback(): Wrote 50837 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:375.740 UTC] postWriteCallback(): Curl post body write function for stream with handle: test and upload handle: 0 returned: {"EventType":"PERSISTED","FragmentTimecode":1659405320837,"FragmentNumber":"91343852333181432417440863433060039285433022747"}
+
+[DEBUG] [02-08-2022 01:55:22:375.825 UTC] fragmentAckReceivedHandler invoked
+[DEBUG] [02-08-2022 01:55:22:397.094 UTC] postReadCallback(): Wrote 53965 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:420.273 UTC] postReadCallback(): Wrote 54106 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:489.016 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:490.346 UTC] postReadCallback(): Wrote 41737 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:514.922 UTC] postReadCallback(): Wrote 53275 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:586.102 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:587.694 UTC] postReadCallback(): Wrote 41212 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:651.465 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:652.892 UTC] postReadCallback(): Wrote 48885 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:720.155 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:721.780 UTC] postReadCallback(): Wrote 42442 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:790.161 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:791.991 UTC] postReadCallback(): Wrote 34653 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:817.732 UTC] postReadCallback(): Wrote 51218 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:883.441 UTC] postReadCallback(): Wrote 65524 bytes to Kinesis Video. Upload stream handle: 0
+[DEBUG] [02-08-2022 01:55:22:884.575 UTC] postReadCallback(): Wrote 38349 bytes to Kinesis Video. Upload stream handle: 0

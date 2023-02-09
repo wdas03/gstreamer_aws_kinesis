@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwidgets.org/wxxrc">
+    <object class="wxWizard" name="ID_WIZARDDIALOG" subclass="WizardDialog">
+        <style>wxDEFAULT_DIALOG_STYLE|wxCAPTION|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX</style>
+        <exstyle>wxWS_EX_BLOCK_EVENTS|wxWIZARD_EX_HELPBUTTON</exstyle>
+        <pos>0,0</pos>
+        <title>OcularDx Testing Portal</title>
+        <bitmap>wizard.png</bitmap>
+        <object class="wxWizardPageSimple" name="ID_WIZARD_DIALOG_FIRSTPAGE" subclass="FirstPage">
+            <style>wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC">
+                        <label>Enter your email and unique ID code to register for the test and complete your setup.
+</label>
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <size>5,5</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_LEFT|wxLEFT|wxRIGHT|wxTOP</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC">
+                        <label>Email:</label>
+                    </object>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxTextCtrl" name="ID_WIZARD_DIALOG_TEXTCTRL">
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <size>5,5</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_LEFT|wxLEFT|wxRIGHT|wxTOP</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC">
+                        <label>ID Code:</label>
+                    </object>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxTextCtrl" name="ID_WIZARD_DIALOG_TEXTCTRL1">
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <option>1</option>
+                    <size>5,5</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_LEFT|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC">
+                        <label>Click Next to continue registration.</label>
+                    </object>
+                </object>
+            </object>
+        </object>
+        <object class="wxWizardPageSimple" name="ID_WIZARD_DIALOG_SECONDPAGE" subclass="SecondPage">
+            <style>wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxALIGN_LEFT|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC">
+                        <label>Please verify that the information below is correct:</label>
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <size>5,5</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_LEFT|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxCheckBox" name="ID_WIZARD_DIALOG_CHECKBOX">
+                        <label>Option 1</label>
+                        <checked>0</checked>
+                    </object>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_LEFT|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxCheckBox" name="ID_WIZARD_DIALOG_CHECKBOX1">
+                        <label>Option 2</label>
+                        <checked>0</checked>
+                    </object>
+                </object>
+            </object>
+        </object>
+        <object class="wxWizardPageSimple" name="ID_WIZARD_DIALOG_THIRDPAGE" subclass="ThirdPage">
+            <style>wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC_SCAN_CAMERA">
+                        <font>
+                            <size>15</size>
+                            <family>swiss</family>
+                            <face>Arial</face>
+                        </font>
+                        <label>Please disconnect all USB devices from your computer. Plug in the USB cord from the VR headset into the USB port on your computer.
+
+Click the button below to scan for camera devices on your computer. Select the two cameras with device name: “USB HD Camera”. 
+
+If no corresponding cameras show up, unplug and replug the USB cord and click Find Devices again.</label>
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <size>5,20</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxButton" name="ID_BUTTON_SCAN_CAMERAS">
+                        <label>Scan Camera Devices</label>
+                        <XRCED>
+                            <events>EVT_BUTTON|EVT_LEFT_DCLICK|EVT_MIDDLE_DCLICK|EVT_RIGHT_DCLICK</events>
+                        </XRCED>
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <size>5,5</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxGROW|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxCheckListBox" name="ID_CHECKLISTBOX_CAMERA_LIST">
+                        <style>wxLB_SINGLE</style>
+                        <XRCED>
+                            <events>EVT_LISTBOX|EVT_UPDATE_UI</events>
+                        </XRCED>
+                    </object>
+                </object>
+            </object>
+        </object>
+        <object class="wxWizardPageSimple" name="ID_WIZARD_DIALOG_FOURTHPAGE" subclass="FourthPage">
+            <style>wxTAB_TRAVERSAL</style>
+            <object class="wxBoxSizer">
+                <orient>wxVERTICAL</orient>
+                <object class="sizeritem">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxStaticText" name="wxID_STATIC">
+                        <label>Click the button below to test the USB cameras and make sure they can stream to our servers.</label>
+                    </object>
+                </object>
+                <object class="spacer">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <size>5,5</size>
+                </object>
+                <object class="sizeritem">
+                    <flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+                    <border>5</border>
+                    <object class="wxButton" name="ID_BUTTON">
+                        <label>Test USB Cameras</label>
+                        <XRCED>
+                            <events>EVT_BUTTON</events>
+                        </XRCED>
+                    </object>
+                </object>
+            </object>
+        </object>
+    </object>
+</resource>

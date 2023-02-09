@@ -1,0 +1,11 @@
+.DS_STORE
+*.dSYM/*
+*.o
+*.mp4
+.vscode
+kvs.log.*
+main
+wxApp
+wizarddialog
+wizardSetup
+*.plist
